@@ -2,6 +2,7 @@
   "name": "hotwire_project",
   "private": true,
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.2.4",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -9,13 +10,9 @@
     "autoprefixer": "^10.4.13",
     "esbuild": "^0.17.5",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "turbolinks": "^5.2.0"
+    "tailwindcss": "^3.2.4"
   },
   "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^4.11.1"
-  },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
     "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
