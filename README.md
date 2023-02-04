@@ -19,6 +19,9 @@ Things you may want to cover:
 ### Stimulus-rails
   https://github.com/hotwired/stimulus-rails
 
+### Css templates
+https://flowbite.com/
+
 * Configuration
 
 * Database creation

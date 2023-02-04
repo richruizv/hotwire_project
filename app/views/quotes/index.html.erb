@@ -1,9 +1,13 @@
-<main class="container">
-  <div class="header">
-    <h1>Quotes</h1>
-    <%= link_to "New quote",
-                new_quote_path,
-                class: "btn btn--primary" %>
+<main class="w-full">
+  <div class="header ">
+    <div class="grid grid-cols-4">
+      <h1 class="col-span-3">Quotes</h1>
+      <div>
+        <%= link_to "New quote",
+                  new_quote_path,
+                  class: "btn btn-rose float-right" %>
+      </div>
+    </div>
   </div>
 
   <%= render @quotes %>

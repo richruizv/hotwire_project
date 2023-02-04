@@ -1,8 +1,11 @@
 <main class="container">
   <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
-  <div class="header">
-    <h1>
-      <%= @quote.name %>
-    </h1>
-  </div>
+  <div class="grid grid-cols-4">
+      <h1 class="col-span-3"><%= @quote.name %></h1>
+      <div>
+        <%= link_to "Add date",
+                  new_quote_path,
+                  class: "btn btn-rose float-right" %>
+      </div>
+    </div>
 </main>

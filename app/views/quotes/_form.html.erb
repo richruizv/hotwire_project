@@ -4,7 +4,8 @@
       <%= quote.errors.full_messages.to_sentence.capitalize %>
     </div>
   <% end %>
-
-  <%= f.input :name, input_html: { autofocus: true } %>
-  <%= f.submit class: "btn btn--secondary" %>
+  <div class="bg-white shadow-md p-2 rounded-md flex ">
+    <%= f.input :name, label: false, wrapper_html: {class: 'w-full'}, input_html: {autofocus: true } %>
+    <button type="submit" class="btn inline-flex btn-green"><%=show_svg('check.svg') %></button>
+  </div>
 <% end %>
