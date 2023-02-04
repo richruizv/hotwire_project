@@ -1,14 +1,19 @@
 <main class="w-full">
-  <div class="header ">
-    <div class="grid grid-cols-4">
-      <h1 class="col-span-3">Quotes</h1>
-      <div>
-        <%= link_to "New quote",
-                  new_quote_path,
-                  class: "btn btn-rose float-right" %>
+  <%= turbo_frame_tag "first_turbo_frame" do %>
+    <div class="header ">
+      <div class="grid grid-cols-4">
+        <h1 class="col-span-3">Quotes</h1>
+        <div>
+          <%= link_to "New quote",
+                    new_quote_path,
+                    data: { turbo_frame: "_top" },
+                    class: "btn btn-rose float-right" %>
+        </div>
       </div>
     </div>
-  </div>
+  <% end %>
 
-  <%= render @quotes %>
+  <%= turbo_frame_tag "second_frame" do %>
+    <%= render @quotes %>
+  <% end %>
 </main>
