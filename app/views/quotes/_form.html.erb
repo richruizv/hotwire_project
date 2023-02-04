@@ -6,6 +6,9 @@
   <% end %>
   <div class="bg-white shadow-md p-2 rounded-md flex ">
     <%= f.input :name, label: false, wrapper_html: {class: 'w-full'}, input_html: {autofocus: true } %>
+    <%= link_to quotes_path, class: "btn btn--light" do %>
+      <%=show_svg('times.svg') %>
+    <% end %>
     <button type="submit" class="btn inline-flex btn-green"><%=show_svg('check.svg') %></button>
   </div>
 <% end %>
