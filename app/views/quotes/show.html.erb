@@ -1,11 +1,14 @@
+
 <main class="container">
-  <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
-  <div class="grid grid-cols-4">
-      <h1 class="col-span-3"><%= @quote.name %></h1>
-      <div>
-        <%= link_to "Add date",
-                  new_quote_path,
-                  class: "btn btn-rose float-right" %>
+  <%= turbo_frame_tag dom_id(@quote) do %>
+    <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
+    <div class="grid grid-cols-4">
+        <h1 class="col-span-3"><%= @quote.name %></h1>
+        <div>
+          <%= link_to "Add date",
+                    new_quote_path,
+                    class: "btn btn-rose float-right" %>
+        </div>
       </div>
-    </div>
+    <% end %>
 </main>
