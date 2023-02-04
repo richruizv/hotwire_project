@@ -8,6 +8,7 @@ Things you may want to cover:
 * Ruby version
 * Tutorial
   https://www.hotrails.dev/turbo-rails
+
 * System dependencies
 ### js-bundling
   https://github.com/rails/jsbundling-rails
@@ -21,6 +22,10 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+
+* Test
+
+rails test test/system/quotes_test.rb:
 
 * Database initialization
 
