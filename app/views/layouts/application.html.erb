@@ -14,6 +14,9 @@
 
   <body class="bg-rose-50">    
     <%= render "layouts/navbar" %>
+    <div id="flash" class="flash">
+      <%= render "layouts/flash" %>
+    </div>
     <div class="max-w-3xl mx-4 md:mx-auto mt-20">
       <%= yield %>
     </div>
