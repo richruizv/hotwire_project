@@ -1,5 +1,5 @@
 <p class="text-center mx-auto mb-10">This single-page quote editor was build with Turbo and... <b>a single line</b> of custom JavaScript for the flash message animation.  If you want to learn how it is made, you can read the <a class="inline" href="https://www.hotrails.dev/">Turbo Rails tutorial.</a></p>
-<%= turbo_stream_from "quotes" %>
+<%= turbo_stream_from current_company,"quotes" %>
 <main class="w-full">
   <div class="header ">
     <div class="grid grid-cols-4">
