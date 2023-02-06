@@ -25,6 +25,10 @@ h2 {
   @apply text-white bg-green-500
 }
 
+.btn.btn-red {
+  @apply text-white bg-red-500
+}
+
 .btn.btn-icon {
   @apply px-2.5 py-2 inline-block bg-slate-100	
 }

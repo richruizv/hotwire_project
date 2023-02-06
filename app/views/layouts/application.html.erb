@@ -12,13 +12,9 @@
 
   </head>
 
-  <body class="bg-orange-50">
-    <div class="max-w-3xl mx-4 md:mx-auto mt-20 ">
-      <h1 class="text-5xl text-center mb-4 "> 
-        <span class="inline-block w-12 text-red-500	"><%=show_svg('hotrails.svg') %></span>
-        Hotrails 
-      </h1>
-      <p class="text-center mx-auto mb-10">This single-page quote editor was build with Turbo and... <b>a single line</b> of custom JavaScript for the flash message animation.  If you want to learn how it is made, you can read the <a class="inline" href="https://www.hotrails.dev/">Turbo Rails tutorial.</a></p>
+  <body class="bg-orange-50">    
+    <%= render "layouts/navbar" %>
+    <div class="max-w-3xl mx-4 md:mx-auto mt-20">
       <%= yield %>
     </div>
   </body>
