@@ -30,7 +30,10 @@ h2 {
 }
 
 .btn.btn-icon {
-  @apply px-2.5 py-2 inline-block bg-slate-100	
+  @apply px-2 py-1 inline-block bg-slate-100	
+}
+.btn.btn-icon:hover {
+  @apply bg-slate-300	
 }
 
 input {

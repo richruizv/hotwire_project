@@ -1,5 +1,5 @@
 <%= turbo_frame_tag dom_id(quote) do %>
-  <div class="bg-white my-2  p-4 rounded-lg grid grid-cols-2 shadow-md">
+  <div class="bg-white my-4  px-4 py-2 rounded-lg grid grid-cols-2 shadow-md">
     <%= link_to quote.name, quote_path(quote) %>
     <div class="flex justify-end">
       <%= link_to edit_quote_path(quote), class: "btn btn-icon" do %>
