@@ -1,0 +1,11 @@
+<div class="flex flex-col border-2 px-8 py-4 border-dashed items-center">
+  <h1 class="text-3xl"><span class="inline-block w-12"><%=show_svg('empty.svg') %></span></h1>
+  <h4><b>You don't have any quotes yet</b></h4>
+  <p class="mb-4">Get started by creating a new quote.</p>
+  <div>
+    <%= link_to "New quote",
+      new_quote_path,
+      data: { turbo_frame: dom_id(Quote.new) },
+      class: "btn btn-rose float-right" %>
+  </div>
+</div>
